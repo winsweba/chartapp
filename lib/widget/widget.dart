@@ -6,9 +6,9 @@ Widget appBarMain (BuildContext context){
   );
 }
 
-InputDecoration textFieldInputDecoration(Stream hintText){
+InputDecoration textFieldInputDecoration(String hintText){
   return InputDecoration(
-      hintText: 'Email',
+      hintText: hintText,
       hintStyle: TextStyle(
         color: Colors.white54,
       ),
@@ -18,5 +18,12 @@ InputDecoration textFieldInputDecoration(Stream hintText){
       enabledBorder: UnderlineInputBorder(
         borderSide: BorderSide(color: Colors.white),
       )
+  );
+}
+
+TextStyle simpleTextStyle(){
+  return TextStyle(
+    color:  Colors.white,
+    fontSize: 16,
   );
 }
